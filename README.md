@@ -4,11 +4,16 @@ Source for [lukeyone.github.io](https://lukeyone.github.io), a static portfolio 
 
 ## Highlights
 
-- Responsive, dependency-free HTML/CSS/JavaScript
+- Responsive, dependency-free HTML, CSS and JavaScript
 - Accessible navigation and reduced-motion support
 - Structured data and social metadata
 - Project case studies grounded in public repositories
 - Confidential commercial work described without exposing private source code
+- Central `profile.json` file for synchronising the headline, summary, links, location and profile image
+
+## Updating profile information
+
+Edit `profile.json` to update the visible identity content without changing the page layout. The static HTML remains as a fallback when JavaScript is unavailable.
 
 ## Local preview
 
