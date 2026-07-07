@@ -1,0 +1,68 @@
+[
+  {
+    "company": "Design Consulting",
+    "title": "JP-PRO Engineering Deliverables Automation",
+    "description": "A configurable C#/.NET Autodesk Vault Job Processor extension that reacts to lifecycle transitions and generates controlled engineering outputs including PDF, STEP, IGES, DXF, sheet-metal and synchronised document formats.",
+    "highlights": [
+      "Vault lifecycle and background-job integration",
+      "XML-driven routing, exporter settings and filename rules",
+      "Attachment, overwrite, logging and notification controls"
+    ],
+    "stack": ["C#", ".NET Framework", "Autodesk Vault", "Inventor", "AutoCAD", "XML"]
+  },
+  {
+    "company": "SkyScale",
+    "title": "AI Mentions Tracker",
+    "description": "A full-stack AI-search visibility platform that runs grounded Gemini audits, uses structured model judging to classify brand mentions and citations, stores results in PostgreSQL and produces daily analytical rollups.",
+    "highlights": [
+      "Next.js dashboard with FastAPI services",
+      "Grounded LLM calls and second-pass structured judging",
+      "Worker, Docker and Google Cloud deployment architecture"
+    ],
+    "stack": ["Next.js", "FastAPI", "PostgreSQL", "Vertex AI", "Docker", "Google Cloud"]
+  },
+  {
+    "company": "SkyScale",
+    "title": "Price Hunter Pro",
+    "description": "An Australian retail meta-search prototype that queries multiple providers in parallel, converts source-specific responses into a common product schema, removes basic duplicates and presents price and risk comparisons.",
+    "highlights": [
+      "eBay OAuth, SerpAPI and Puppeteer provider adapters",
+      "Fault-tolerant Promise.allSettled aggregation",
+      "Firestore caching and grey-market risk labelling"
+    ],
+    "stack": ["React", "TypeScript", "Node.js", "Express", "Puppeteer", "Firestore"]
+  },
+  {
+    "company": "SkyScale",
+    "title": "AI Visibility Website Platform",
+    "description": "A family of responsive React service experiences for SkyScale, covering the company website, AEO/GEO positioning, audit packaging, client evidence, pricing, FAQs, structured metadata and conversion journeys.",
+    "highlights": [
+      "Multi-page company and service architecture",
+      "Technical SEO, canonical metadata and JSON-LD",
+      "Reusable proof, pricing, review and CTA components"
+    ],
+    "stack": ["React", "TypeScript", "Vite", "Tailwind CSS", "Framer Motion", "Schema.org"]
+  },
+  {
+    "company": "SkyScale",
+    "title": "Legal Services Conversion Website",
+    "description": "A criminal-defence website prototype designed around urgent mobile contact, reassurance, fee transparency, authority signals, service qualification and repeated consultation actions.",
+    "highlights": [
+      "Legal-services information and trust architecture",
+      "Responsive click-to-call and sticky mobile actions",
+      "Reusable services, process, profile, review and FAQ sections"
+    ],
+    "stack": ["React", "TypeScript", "Tailwind CSS", "Radix UI", "Framer Motion", "Zod"]
+  },
+  {
+    "company": "SkyScale",
+    "title": "HTML-to-PDF Reporting Utility",
+    "description": "A Node.js browser-automation tool that loads local or hosted HTML, waits for network and font completion, applies print-specific layout rules and exports each report section as a correctly paginated PDF page.",
+    "highlights": [
+      "Headless Chromium document rendering",
+      "Responsive-layout and font-reflow debugging",
+      "Page-specific print CSS with reliable backgrounds and breaks"
+    ],
+    "stack": ["Node.js", "Puppeteer", "Chromium", "Print CSS", "PDF Automation"]
+  }
+]
