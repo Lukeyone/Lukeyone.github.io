@@ -34,4 +34,8 @@
   .case-grid h2 { position: static; }
   .metric-cards { grid-template-columns: 1fr; }
   .case-table { display: block; overflow-x: auto; }
+  .site-header .nav-toggle { display: none; }
+  .site-header .site-nav { position: static; inset: auto; display: flex; width: auto; flex-direction: row; align-items: center; justify-content: flex-end; gap: .65rem; padding: 0; overflow: visible; background: transparent; transform: none; }
+  .site-header .site-nav a:not(.nav-cta) { display: none; }
+  .site-header .site-nav .nav-cta { width: auto; min-height: 42px; margin: 0; padding: 0 .9rem; border-radius: 10px; font-size: .78rem; }
 }
