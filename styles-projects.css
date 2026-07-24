@@ -83,3 +83,38 @@
 .block-b { right: 13%; top: 16%; transform: rotate(7deg); background: rgba(102,224,193,.25); }
 .block-c { left: 24%; bottom: 17%; transform: rotate(5deg); background: rgba(156,114,255,.32); }
 .block-d { right: 23%; bottom: 14%; transform: rotate(-6deg); background: rgba(255,173,105,.25); }
+
+.research-section { padding-top: 52px; }
+.agent-visual { min-height: 600px; background: radial-gradient(circle at 70% 15%, rgba(102,224,193,.18), transparent 35%), linear-gradient(145deg, #07111f, #111f35); }
+.agent-flow { display: grid; grid-template-columns: repeat(7, auto); align-items: center; justify-content: center; gap: .65rem; height: calc(100% - 46px); padding: 2rem; }
+.agent-flow > span { padding: .7rem .9rem; border: 1px solid rgba(102,224,193,.3); border-radius: 12px; background: rgba(102,224,193,.08); color: var(--cyan); font-size: .72rem; font-weight: 900; }
+.agent-flow > b { color: #60728c; }
+.agent-status { grid-column: 1 / -1; padding: 1rem; border: 1px solid rgba(255,255,255,.08); border-radius: 14px; background: rgba(255,255,255,.035); }
+.agent-status small, .agent-status strong { display: block; }
+.agent-status small { color: #7f8da1; font-size: .6rem; text-transform: uppercase; letter-spacing: .08em; }
+.agent-status strong { margin-top: .35rem; font-size: .9rem; }
+
+.phosphorus-visual { min-height: 510px; background: radial-gradient(circle at center, #6d7f2b, #172218 48%, #08111f 75%); }
+.phosphorus-core { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); display: grid; place-items: center; width: 112px; height: 112px; border-radius: 50%; background: #d8f06b; color: #172218; font-size: 3.2rem; font-weight: 950; box-shadow: 0 0 60px rgba(216,240,107,.35); }
+.resource-ring { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); border: 1px solid rgba(216,240,107,.25); border-radius: 50%; }
+.ring-one { width: 290px; height: 290px; }
+.ring-two { width: 440px; height: 440px; }
+.resource-node { position: absolute; padding: .55rem .8rem; border: 1px solid rgba(255,255,255,.14); border-radius: 999px; background: rgba(8,17,31,.7); color: #d8f06b; font-size: .68rem; font-weight: 900; }
+.node-one { left: 14%; top: 24%; } .node-two { right: 12%; top: 28%; } .node-three { right: 16%; bottom: 22%; } .node-four { left: 16%; bottom: 20%; }
+
+.vision-visual, .language-visual, .sensor-visual, .food-visual { display: grid; place-items: center; min-height: 330px; padding: 2rem; }
+.vision-visual { background: linear-gradient(145deg, #102a43, #111827); }
+.vision-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; transform: rotate(-3deg); }
+.vision-grid span { display: grid; place-items: center; width: 105px; height: 86px; border: 1px solid rgba(255,255,255,.16); border-radius: 18px; background: rgba(107,140,255,.17); font-weight: 900; }
+.language-visual { background: radial-gradient(circle at 25% 25%, rgba(156,114,255,.35), transparent 38%), #111427; }
+.language-visual strong { font-size: 3.3rem; }
+.token-stream { display: flex; flex-wrap: wrap; justify-content: center; gap: .45rem; margin-bottom: 1.5rem; }
+.token-stream span { padding: .35rem .55rem; border-radius: 8px; background: rgba(255,255,255,.08); color: #b9a8ff; font-size: .65rem; }
+.sensor-visual { background: linear-gradient(145deg, #071e22, #102a33); }
+.sensor-points { width: 230px; height: 160px; background-image: radial-gradient(circle, rgba(102,224,193,.85) 0 2px, transparent 3px); background-size: 19px 17px; transform: skewY(-7deg); opacity: .8; }
+.sensor-axis { position: absolute; width: 260px; height: 185px; border-left: 1px solid rgba(255,255,255,.22); border-bottom: 1px solid rgba(255,255,255,.22); }
+.sensor-visual > span { position: absolute; bottom: 1.5rem; color: #7da9a4; font-size: .7rem; font-weight: 800; }
+.food-visual { background: linear-gradient(145deg, #311b16, #172218); }
+.food-tree { display: flex; align-items: center; gap: .7rem; }
+.food-tree span { padding: .8rem 1rem; border: 1px solid rgba(216,240,107,.22); border-radius: 14px; background: rgba(216,240,107,.08); color: #d8f06b; font-size: .75rem; font-weight: 900; }
+.food-tree b { color: #7d8b64; }
