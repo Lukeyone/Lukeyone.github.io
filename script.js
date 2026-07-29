@@ -60,6 +60,15 @@ function slugify(value) {
     .replace(/^-+|-+$/g, '');
 }
 
+function scrollToCurrentHash() {
+  const targetId = decodeURIComponent(window.location.hash.replace(/^#/, ''));
+  if (!targetId) return;
+  const target = document.getElementById(targetId);
+  if (target) {
+    window.requestAnimationFrame(() => target.scrollIntoView({ block: 'start' }));
+  }
+}
+
 async function syncProfile() {
   try {
     const response = await fetch('profile.json', { cache: 'no-store' });
@@ -113,6 +122,7 @@ async function syncCommercialProjects() {
   if (revitCase && !revitCase.id) {
     revitCase.id = 'revit-design-exploration-batch-renderer';
   }
+  scrollToCurrentHash();
 
   try {
     const response = await fetch('commercial-projects.json', { cache: 'no-store' });
@@ -152,6 +162,7 @@ async function syncCommercialProjects() {
     `;
 
     section.appendChild(catalogue);
+    scrollToCurrentHash();
   } catch (error) {
     console.warn('Commercial project catalogue was skipped.', error);
   }
