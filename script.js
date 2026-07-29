@@ -51,6 +51,15 @@ function escapeHtml(value) {
     .replaceAll("'", '&#039;');
 }
 
+function slugify(value) {
+  return String(value)
+    .trim()
+    .toLowerCase()
+    .replaceAll('&', 'and')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
 async function syncProfile() {
   try {
     const response = await fetch('profile.json', { cache: 'no-store' });
@@ -64,6 +73,7 @@ async function syncProfile() {
     const profileName = document.querySelector('.profile-caption strong');
     const profileLocation = document.querySelector('.profile-caption span');
     const aboutSummary = document.querySelector('.about-lede');
+    const contactAvailability = document.querySelector('body:not(.research-page) .contact-side p');
 
     if (heroTitle && profile.headline) heroTitle.textContent = profile.headline;
     if (heroSummary && profile.summary) heroSummary.textContent = profile.summary;
@@ -77,6 +87,9 @@ async function syncProfile() {
     if (profileName && profile.name) profileName.textContent = profile.name;
     if (profileLocation && profile.location) profileLocation.textContent = profile.location;
     if (aboutSummary && profile.about) aboutSummary.textContent = profile.about;
+    if (contactAvailability && profile.fullTimeAvailability) {
+      contactAvailability.textContent = profile.fullTimeAvailability;
+    }
 
     document.querySelectorAll('a[href="https://github.com/Lukeyone"]').forEach((link) => {
       if (profile.github) link.href = profile.github;
@@ -95,6 +108,11 @@ async function syncProfile() {
 async function syncCommercialProjects() {
   const section = document.querySelector('.private-section');
   if (!section) return;
+
+  const revitCase = section.querySelector('.private-card');
+  if (revitCase && !revitCase.id) {
+    revitCase.id = 'revit-design-exploration-batch-renderer';
+  }
 
   try {
     const response = await fetch('commercial-projects.json', { cache: 'no-store' });
@@ -115,7 +133,7 @@ async function syncCommercialProjects() {
       </div>
       <div class="commercial-grid">
         ${projects.map((project) => `
-          <article class="commercial-card">
+          <article class="commercial-card" id="${escapeHtml(project.slug || slugify(project.title))}">
             <div class="commercial-card-top">
               <span>${escapeHtml(project.company)}</span>
               <small>Private repository</small>
