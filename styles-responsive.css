@@ -45,6 +45,16 @@
   .metric-row { grid-template-columns: 1fr; }
   .metric-row > div:nth-child(n+2) { display: none; }
   .project-wide .project-visual { min-height: 380px; }
+  .agent-flow { grid-template-columns: 1fr; align-content: center; justify-items: stretch; gap: .55rem; }
+  .agent-flow > span { text-align: center; }
+  .agent-flow > b { display: none; }
+  .agent-status { grid-column: 1; }
+  .resource-ring.ring-two { width: 310px; height: 310px; }
+  .resource-ring.ring-one { width: 215px; height: 215px; }
+  .resource-node { font-size: .58rem; padding: .45rem .6rem; }
+  .vision-grid span { width: 92px; height: 74px; }
+  .food-tree { flex-direction: column; }
+  .food-tree b { transform: rotate(90deg); }
   .code-block { width: 112px; padding: .8rem; }
   .block-a { left: 7%; }
   .block-b { right: 7%; }
