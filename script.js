@@ -32,6 +32,16 @@ document.querySelectorAll('[data-year]').forEach((node) => {
   node.textContent = new Date().getFullYear();
 });
 
+const employmentDateCorrections = new Map([
+  ['2026 — Present', '2025 — Present'],
+  ['2024 — 2026', '2024 — 2025']
+]);
+
+document.querySelectorAll('.timeline-date').forEach((node) => {
+  const correctedDate = employmentDateCorrections.get(node.textContent.trim());
+  if (correctedDate) node.textContent = correctedDate;
+});
+
 function escapeHtml(value) {
   return String(value)
     .replaceAll('&', '&amp;')
@@ -74,8 +84,8 @@ async function syncProfile() {
     document.querySelectorAll('a[href="https://www.linkedin.com/in/lachlanmcdonaldtech"]').forEach((link) => {
       if (profile.linkedin) link.href = profile.linkedin;
     });
-    document.querySelectorAll('a[href="mailto:lachornot@gmail.com"]').forEach((link) => {
-      if (profile.email) link.href = profile.email;
+    document.querySelectorAll('a[href^="mailto:"]').forEach((link) => {
+      if (profile.email && !link.href.includes('?subject=')) link.href = profile.email;
     });
   } catch (error) {
     console.warn('Portfolio profile sync was skipped.', error);
