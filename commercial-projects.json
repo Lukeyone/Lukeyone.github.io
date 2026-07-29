@@ -2,6 +2,7 @@
   {
     "company": "Design Consulting",
     "title": "JP-PRO Engineering Deliverables Automation",
+    "slug": "jp-pro-engineering-deliverables-automation",
     "description": "A configurable C#/.NET Autodesk Vault Job Processor extension that reacts to lifecycle transitions and generates controlled engineering outputs including PDF, STEP, IGES, DXF, sheet-metal and synchronised document formats.",
     "highlights": [
       "Vault lifecycle and background-job integration",
@@ -13,6 +14,7 @@
   {
     "company": "SkyScale",
     "title": "AI Mentions Tracker",
+    "slug": "ai-mentions-tracker",
     "description": "A full-stack AI-search visibility platform that runs grounded Gemini audits, uses structured model judging to classify brand mentions and citations, stores results in PostgreSQL and produces daily analytical rollups.",
     "highlights": [
       "Next.js dashboard with FastAPI services",
@@ -22,8 +24,21 @@
     "stack": ["Next.js", "FastAPI", "PostgreSQL", "Vertex AI", "Docker", "Google Cloud"]
   },
   {
+    "company": "LIFTWOMEN Group",
+    "title": "Grant Search Finder",
+    "slug": "grant-search-finder",
+    "description": "An AI-assisted funding-discovery and review workflow that replaced fragmented manual grant sourcing with structured extraction, duplicate detection, expiry validation, controlled publication and member access.",
+    "highlights": [
+      "Grant discovery, extraction and duplicate checking",
+      "Expiry validation and administrator approval workflow",
+      "Member access, favourites, filtering and publication controls"
+    ],
+    "stack": ["Python", "JavaScript", "AWS", "AI-assisted extraction", "Workflow automation", "Access control"]
+  },
+  {
     "company": "SkyScale",
     "title": "Price Hunter Pro",
+    "slug": "price-hunter-pro",
     "description": "An Australian retail meta-search prototype that queries multiple providers in parallel, converts source-specific responses into a common product schema, removes basic duplicates and presents price and risk comparisons.",
     "highlights": [
       "eBay OAuth, SerpAPI and Puppeteer provider adapters",
@@ -35,6 +50,7 @@
   {
     "company": "SkyScale",
     "title": "AI Visibility Website Platform",
+    "slug": "ai-visibility-website-platform",
     "description": "A family of responsive React service experiences for SkyScale, covering the company website, AEO/GEO positioning, audit packaging, client evidence, pricing, FAQs, structured metadata and conversion journeys.",
     "highlights": [
       "Multi-page company and service architecture",
@@ -46,6 +62,7 @@
   {
     "company": "SkyScale",
     "title": "Legal Services Conversion Website",
+    "slug": "legal-services-conversion-website",
     "description": "A criminal-defence website prototype designed around urgent mobile contact, reassurance, fee transparency, authority signals, service qualification and repeated consultation actions.",
     "highlights": [
       "Legal-services information and trust architecture",
@@ -57,6 +74,7 @@
   {
     "company": "SkyScale",
     "title": "HTML-to-PDF Reporting Utility",
+    "slug": "html-to-pdf-reporting-utility",
     "description": "A Node.js browser-automation tool that loads local or hosted HTML, waits for network and font completion, applies print-specific layout rules and exports each report section as a correctly paginated PDF page.",
     "highlights": [
       "Headless Chromium document rendering",
