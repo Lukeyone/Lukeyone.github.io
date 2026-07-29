@@ -11,7 +11,7 @@ The site now highlights:
 - **Australian Supermarket Duopoly Analysis** — SQL, pandas, advanced visualisation and a Dockerised Airflow/Spark/PostgreSQL pipeline.
 - **CubeCoder VR** — a Unity/OpenXR visual-programming environment and controlled honours study.
 - **Peak Phosphorus research** — independent technical research connecting phosphate geology, processing, fertiliser systems, food security and geopolitical risk.
-- **PyTorch computer vision, GPT-2 fine-tuning, microclimate clustering and Australian food classification** — consolidated in a methodology-first ML research case study.
+- **PyTorch computer vision, geological language-model benchmarking, microclimate clustering and Australian food classification** — consolidated in a methodology-first ML research case study. The geological benchmark reports a negative model result while quantifying LoRA efficiency, overfitting and out-of-domain degradation.
 
 ## Evidence rules
 
@@ -22,6 +22,7 @@ Portfolio claims follow these rules:
 3. Academic metrics identify the documented experiment and retain material limitations.
 4. Synthetic data is labelled as synthetic.
 5. AI-assisted systems are presented as decision support with human review, not autonomous consequential decision-making.
+6. Negative results are not reframed as successful model capability; efficiency and methodological findings are separated from task performance.
 
 ## Structure
 
@@ -31,11 +32,13 @@ Portfolio claims follow these rules:
 ├── assess-swift-case-study.html
 ├── phosphorus-research.html
 ├── ml-research.html
+├── research.html
 ├── profile.json
 ├── case-study.css
 ├── styles-base.css
 ├── styles-projects.css
 ├── styles-sections.css
+├── styles-research.css
 ├── styles-responsive.css
 └── script.js
 ```
