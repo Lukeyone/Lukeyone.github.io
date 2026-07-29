@@ -1,7 +1,8 @@
 {
   "name": "Lachlan McDonald",
   "location": "Brisbane, Queensland",
-  "availability": "Available and willing to relocate to Sydney for full-time applied AI and machine-learning work",
+  "availability": "Open to relocation anywhere in Australia for full-time applied AI and software engineering work",
+  "fullTimeAvailability": "Available for full-time applied AI and software engineering work and open to relocation anywhere in Australia.",
   "headline": "I build AI systems that make complex evidence usable.",
   "summary": "Applied AI and machine learning engineer combining agentic workflows, PyTorch, scientific modelling, data engineering and production-minded software.",
   "about": "I build evidence-led AI and software systems that remain useful when inputs are noisy, sources conflict and real people must review the result.",
